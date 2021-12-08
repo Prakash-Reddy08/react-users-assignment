@@ -26,7 +26,7 @@ const UserModal = ({ details }) => {
         },
     };
     return (
-        <Modal getContainer={false} title="Basic Modal" visible={isModalOpen} footer={[
+        <Modal getContainer={false} title="Basic Modal" onCancel={closeModal} visible={isModalOpen} footer={[
             <Button key="cancel" onClick={() => closeModal()}>
                 Cancel
             </Button>,
