@@ -1,15 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 const Loading = () => {
-    return (
-        <Wrapper>
-            <div className="spinner"></div>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <div className="spinner"></div>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
-    .spinner {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+  margin: auto;
+  .spinner {
   width: 40px;
   height: 40px;
   background-color: #333;

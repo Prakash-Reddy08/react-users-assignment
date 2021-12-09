@@ -3,8 +3,8 @@ import { Button, Input, Modal } from 'antd';
 import { useGlobalContext } from '../context'
 import { Form } from 'antd';
 
-const UserModal = ({ details }) => {
-    const { isModalOpen, closeModal, editUserDetails } = useGlobalContext();
+const UserModal = () => {
+    const { isModalOpen, closeModal, editUserDetails, details } = useGlobalContext();
     const [form] = Form.useForm();
     useEffect(() => {
         form.setFieldsValue({
